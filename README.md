@@ -1,4 +1,4 @@
-# Spring Boot – Day 1 & Day 2
+# Spring Boot Journey (Beginner to Advanced)
 
 This repository contains my Spring Boot learning project created as part of my daily coding practice.
 
