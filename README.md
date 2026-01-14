@@ -69,10 +69,10 @@ Learning project – Day 2
   "age": 21
 }
 
----
-
 ### Status
 Learning project – Day 3
+
+---
 
 ## Tech Stack
 - Java 17
