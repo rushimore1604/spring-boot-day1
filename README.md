@@ -97,3 +97,15 @@ Learning project – **Day 3**
 Learning project – **Day 4**
 
 ---
+
+### Tech Stack
+
+- Java 17
+- Spring
+- Boot 3
+- Maven
+
+## License
+- This project is licensed under the MIT License.
+
+---
