@@ -119,6 +119,18 @@ Learning project – **Day 5**
 
 ---
 
+## Day 6 – Service Layer Implementation
+
+### What this project does
+- Introduced Service Layer for clean architecture
+- Controller now delegates logic to Service classes
+- Improved maintainability and structure
+
+### Status
+Learning project – Day 6
+
+---
+
 ### Tech Stack
 - Java 17
 - Spring Boot 3
