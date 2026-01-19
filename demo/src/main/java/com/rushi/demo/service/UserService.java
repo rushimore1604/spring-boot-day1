@@ -3,6 +3,7 @@ package com.rushi.demo.service;
 import java.time.LocalDateTime;
 
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 import com.rushi.demo.UserRequest;
 import com.rushi.demo.UserResponse;
@@ -41,5 +42,32 @@ public class UserService {
                 savedUser.getName(),
                 savedUser.getAge()
         );
+    }
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
+    }
+
+    public User getUserById(Long id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found with id: " + id));
+    }
+
+    public User updateUser(Long id, UserRequest request) {
+
+        User existingUser = getUserById(id);
+
+        existingUser.setName(request.getName());
+        existingUser.setAge(request.getAge());
+
+        return userRepository.save(existingUser);
+    }
+
+    public String deleteUser(Long id) {
+
+        User existingUser = getUserById(id);
+
+        userRepository.delete(existingUser);
+
+        return "User deleted successfully with id: " + id;
     }
 }
