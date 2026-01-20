@@ -65,10 +65,12 @@ Learning project – **Day 2**
 - **POST** `/user` → Creates a user using JSON input
 
 ### Sample Request (JSON)
-- {
-  - "name": "Rushi",
-  - "age": 21
-- }
+```json
+{
+ "name": "Rushi",
+ "age": 21 
+}
+```
 
 ### Status
 Learning project – **Day 3**
@@ -87,11 +89,13 @@ Learning project – **Day 3**
 - **POST** `/user` → 
 
 ### Sample Response (JSON)
-- {
-  - "message": "User created successfully",
-  - "name": "Rushi",
-  - "age": 21
-- }
+```json
+{
+  "message": "User created successfully",
+  "name": "Rushi",
+  "age": 21
+}
+```
 
 ### Status
 Learning project – **Day 4**
@@ -109,10 +113,12 @@ Learning project – **Day 4**
 - POST `/user`
 
 ### Sample Invalid Request
-- {
-  - "name": "",
-  - "age": 0
-- }
+```json
+{
+  "name": "",
+  "age": 0
+}
+```
 
 ### Status
 Learning project – **Day 5**
@@ -143,17 +149,21 @@ Learning project – Day 6
 - **POST** `/user` → Saves user data into MySQL
 
 ### Sample Request (JSON)
-- {
-  - "name": "Rushi",
-  - "age": 21 
-- }
+```json
+{
+  "name": "Rushi",
+  "age": 21 
+}
+```
 
 ### Sample Response (JSON)
-- {
-  - "message": "User saved successfully with ID: 1",
-  - "name": "Rushi",
-  - "age": 21
-- }
+```json
+{
+  "message": "User saved successfully with ID: 1",
+  "name": "Rushi",
+  "age": 21
+}
+```
 
 ### Database Table
 - Table Name: users
@@ -183,6 +193,27 @@ Learning project – Day 7
 
 ### Status
 Learning project – **Day 8**
+
+---
+
+## Day 9 – Global Exception Handling (Professional API Errors)
+
+### What this project does
+- Added custom exception for user not found
+- Implemented global error handling using `@RestControllerAdvice`
+- Returns clean JSON error responses with HTTP status codes
+
+### Example Error Response (User Not Found)
+```json
+{
+  "status": 404,
+  "error": "User Not Found",
+  "message": "User not found with id: 999",
+  "path": "/api/users/999"
+}
+```
+### Status
+Learning project – **Day 9**
 
 ---
 
