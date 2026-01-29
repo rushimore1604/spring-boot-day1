@@ -324,6 +324,22 @@ Learning project – Day 15
 
 ---
 
+## Day 16 – Repository & Entity Mapping Fix (Spring Data JPA)
+
+### Overview
+During development, the application failed to start due to a Spring Data JPA repository query error. This issue was identified, analyzed, and fixed by aligning repository method definitions with the entity field structure.
+
+---
+
+### Issue Description
+- Application startup failed with `UnsatisfiedDependencyException`
+- Root error:
+
+### Status
+Learning project – Day 16
+
+---
+
 ### Tech Stack
 - Java 17
 - Spring Boot 3
